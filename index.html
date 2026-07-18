@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Bookstore Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header>
+    <div class="container">
+
+        <h1>Independent Bookstore Events</h1>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            &#9776;
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="tagline">
+                    Community • Literature • Learning
+                </p>
+
+                <h2>
+                    Discover Upcoming Independent Bookstore Events
+                </h2>
+
+                <p>
+                    Browse workshops, author sessions, poetry evenings,
+                    book launches, children's storytelling sessions,
+                    and community reading events.
+                </p>
+
+                <a href="#events" class="button">
+                    Explore Events
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="events" class="events">
+
+            <div class="container">
+
+                <h2>Upcoming Events</h2>
+
+                <div class="event-grid">
+
+                    <article class="card">
+
+                        <span class="badge">Upcoming</span>
+
+                        <h3>Author Meet &amp; Greet</h3>
+
+                        <p>
+                            Meet bestselling authors and enjoy an
+                            interactive discussion followed by a Q&amp;A.
+                        </p>
+
+                        <ul class="details">
+                            <li><strong>Date:</strong> 20 July 2026</li>
+                            <li><strong>Time:</strong> 5:00 PM</li>
+                            <li><strong>Venue:</strong> Main Reading Hall</li>
+                        </ul>
+
+                        <button type="button">
+                            <a href="#register">Register</a>
+                        </button>
+
+                    </article>
+
+                    <article class="card">
+
+                        <span class="badge">Upcoming</span>
+
+                        <h3>Children's Story Hour</h3>
+
+                        <p>
+                            Interactive storytelling session designed
+                            especially for young readers.
+                        </p>
+
+                        <ul class="details">
+                            <li><strong>Date:</strong> 23 July 2026</li>
+                            <li><strong>Time:</strong> 11:00 AM</li>
+                            <li><strong>Venue:</strong> Kids Corner</li>
+                        </ul>
+
+                        <button type="button">
+                            <a href="#register">Register</a>
+                        </button>
+
+                    </article>
+
+                    <article class="card">
+
+                        <span class="badge">Upcoming</span>
+
+                        <h3>Poetry Evening</h3>
+
+                        <p>
+                            Listen to local poets and participate
+                            in an open mic session. Also get a chance to win exciting prizes.
+                        </p>
+
+                        <ul class="details">
+                            <li><strong>Date:</strong> 28 July 2026</li>
+                            <li><strong>Time:</strong> 6:30 PM</li>
+                            <li><strong>Venue:</strong> Community Hall</li>
+                        </ul>
+
+                        <button type="button">
+                           <a href="#register">Register</a>
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="search" class="search">
+
+            <div class="container">
+
+                <h2>Find an Event</h2>
+
+                <form>
+
+                    <input
+                        type="search"
+                        placeholder="Search events..."
+                        aria-label="Search Events"
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+                <p class="empty-state">
+                    No matching events found.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="register" class="registration">
+
+            <div class="container">
+
+                <h2>Event Registration</h2>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="person@example.com"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="event">
+                            Select Event
+                        </label>
+
+                        <select
+                            id="event"
+                            required
+                        >
+                            <option value="">
+                                Select an Event
+                            </option>
+
+                            <option>
+                                Author Meet &amp; Greet
+                            </option>
+
+                            <option>
+                                Children's Story Hour
+                            </option>
+
+                            <option>
+                                Poetry Evening
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="submit">
+                        Register Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                Independent Bookstore Events Management System
+            </p>
+
+            <p>
+                &copy; 2026 All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
