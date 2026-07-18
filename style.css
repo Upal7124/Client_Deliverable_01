@@ -1,11 +1,4 @@
-/* ==========================
-        GOOGLE FONT
-========================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-/* ==========================
-        RESET
-========================== */
 
 * {
   margin: 0;
@@ -24,10 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* ==========================
-        VARIABLES
-========================== */
-
 :root {
   --olive: #556b2f;
   --olive-dark: #3d4d22;
@@ -41,18 +30,10 @@ body {
   --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ==========================
-        CONTAINER
-========================== */
-
 .container {
   width: min(90%, 1200px);
   margin: auto;
 }
-
-/* ==========================
-        HEADER
-========================== */
 
 header {
   background: var(--olive);
@@ -77,10 +58,6 @@ header h1 {
   font-weight: 700;
 }
 
-/* ==========================
-        NAVBAR
-========================== */
-
 nav ul {
   display: flex;
   gap: 35px;
@@ -98,10 +75,6 @@ nav a:hover {
   color: #f8f4e8;
 }
 
-/* ==========================
-    HAMBURGER
-========================== */
-
 #menu-toggle {
   display: none;
 }
@@ -112,10 +85,6 @@ nav a:hover {
   font-size: 2rem;
   cursor: pointer;
 }
-
-/* ==========================
-        HERO
-========================== */
 
 .hero {
   background:
@@ -172,10 +141,6 @@ nav a:hover {
   transform: translateY(-4px);
 }
 
-/* ==========================
-        EVENTS
-========================== */
-
 .events {
   padding: 80px 0;
 
@@ -202,16 +167,15 @@ nav a:hover {
 
 .card {
   background: white;
-
   border-radius: 16px;
-
   padding: 30px;
-
   box-shadow: var(--shadow);
-
   transition: 0.35s;
 
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -255,13 +219,8 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* ==========================
-    BUTTON
-========================== */
-
 .card button,
-.search button,
-.registration button {
+.search button {
   padding: 12px 22px;
 
   background: var(--olive);
@@ -276,21 +235,32 @@ nav a:hover {
 }
 
 .card button:hover,
-.search button:hover,
-.registration button:hover {
+.search button:hover {
   background: var(--olive-dark);
 }
+.register-btn {
+  display: inline-block;
+  width: fit-content;
 
+  padding: 12px 24px;
+  margin-top: auto; /* Pushes button to the bottom */
+
+  background: var(--olive);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: var(--olive-dark);
+}
 .card button a {
   color: white;
 
   text-decoration: none;
 }
-
-/* ==========================
-        SEARCH
-========================== */
-
 .search {
   padding: 80px 0;
 }
@@ -338,10 +308,6 @@ nav a:hover {
 
   color: #777;
 }
-
-/* ==========================
-        REGISTRATION
-========================== */
 
 .registration {
   background: var(--cream-dark);
@@ -404,17 +370,27 @@ select:focus {
 }
 
 .registration button {
-  width: 100%;
+  display: inline-block;
 
+  padding: 14px 32px;
+
+  background: var(--olive);
   color: white;
 
+  border: none;
+  border-radius: 8px;
+
   font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
 }
 
-/* ==========================
-        FOOTER
-========================== */
-
+.registration button:hover {
+  background: var(--olive-dark);
+}
 footer {
   background: var(--olive-dark);
 
@@ -428,10 +404,6 @@ footer {
 footer p {
   margin: 8px 0;
 }
-
-/* ==========================
-    RESPONSIVE
-========================== */
 
 @media (max-width: 768px) {
   header .container {
